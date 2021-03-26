@@ -1,0 +1,148 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 90vh;
+    background: rgba(244, 164, 96, 0.8);
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    max-width: 600px;
+    line-height: 25px;
+    padding: 15px;
+}
+
+
+/* Image */
+
+.alura-logo {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right:10px;
+}
+
+
+.page-logo {
+    width: 300px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 500px;
+}
+
+#map {
+    margin-top: 30px;
+    margin-left: 160px;
+}
+
+/* Buttons */
+
+#north:hover{
+    background: rgba(30, 144, 255, 0.5);
+}
+
+#south:hover{
+    background: rgba(255, 0, 0, 0.4);
+}
+
+#africa:hover{
+    background: rgba(255, 255, 0, 0.4);
+}
+
+#asiaeuropa:hover{
+    background: rgba(0, 128, 0, 0.4);
+}
+
+#oceania:hover{
+    background: rgba( 255, 65, 0, 0.4);
+}
+
+
+/* Modal */
+.modal-open{
+    margin-left: 105px;
+    padding: 12px 30px;
+   
+    background: white;
+    color: black;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 2;
+
+    display: none;
+
+    animation: modal-open .4s;
+}
+
+.modal-content{
+    background: #fff;
+    margin-top: 100px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 24px;
+    border-radius: 4px;
+    z-index: 4;
+}
+
+.modal-header{
+    font-weight: 500;
+    padding: 10px 0;
+    font-size: 26px;
+}
+
+.modal-body{
+    color: black;
+    padding: 15px 0;
+}
+
+.modal-footer{
+    padding: 15px 0;
+    text-align: center;
+}
+
+.modal-footer .modal-close{
+    font-size: 14px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color:  #7b7b7b;
+}
+
+.modal-close:hover{
+    color: red;
+}
+
+@keyframes modal-open{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
